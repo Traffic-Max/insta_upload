@@ -55,10 +55,10 @@ if __name__ == "__main__":
     password2 = os.getenv("INSTA_PASSWORD2")
 
     # Настройка расписания для обоих аккаунтов
-    schedule.every().day.at("05:50").do(perform_upload, username1, password1, session_path1)
-    schedule.every().day.at("05:55").do(perform_upload, username2, password2, session_path2)
-    schedule.every().day.at("11:00").do(perform_upload, username1, password1, session_path1)
-    schedule.every().day.at("11:00").do(perform_upload, username2, password2, session_path2)
+    schedule.every().day.at("02:00").do(perform_upload, username1, password1, session_path1)
+    schedule.every().day.at("02:00").do(perform_upload, username2, password2, session_path2)
+    schedule.every().day.at("12:00").do(perform_upload, username1, password1, session_path1)
+    schedule.every().day.at("12:00").do(perform_upload, username2, password2, session_path2)
 
 
     logger.info("Scheduler started. Waiting for scheduled tasks.")
