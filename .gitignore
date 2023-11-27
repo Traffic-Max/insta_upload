@@ -27,7 +27,7 @@ venv/
 *.log
 *.sqlite3
 *.db
-media
+
 toji_logs.log
 session.json
 session1.json
