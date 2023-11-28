@@ -57,8 +57,12 @@ if __name__ == "__main__":
     # Настройка расписания для обоих аккаунтов
     schedule.every().day.at("02:00").do(perform_upload, username1, password1, session_path1)
     schedule.every().day.at("02:00").do(perform_upload, username2, password2, session_path2)
-    schedule.every().day.at("12:00").do(perform_upload, username1, password1, session_path1)
-    schedule.every().day.at("12:00").do(perform_upload, username2, password2, session_path2)
+    schedule.every().day.at("07:00").do(perform_upload, username1, password1, session_path1)
+    schedule.every().day.at("07:00").do(perform_upload, username2, password2, session_path2)
+    schedule.every().day.at("11:00").do(perform_upload, username1, password1, session_path1)
+    schedule.every().day.at("11:00").do(perform_upload, username2, password2, session_path2)
+    schedule.every().day.at("14:00").do(perform_upload, username1, password1, session_path1)
+    schedule.every().day.at("14:00").do(perform_upload, username2, password2, session_path2)
 
 
     logger.info("Scheduler started. Waiting for scheduled tasks.")
